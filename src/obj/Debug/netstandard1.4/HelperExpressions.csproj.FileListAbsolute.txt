@@ -1,7 +1,7 @@
 E:\GitHub\HelperExpressions\src\bin\Debug\netstandard1.4\HelperExpressions.deps.json
 E:\GitHub\HelperExpressions\src\bin\Debug\netstandard1.4\HelperExpressions.dll
 E:\GitHub\HelperExpressions\src\bin\Debug\netstandard1.4\HelperExpressions.pdb
-E:\GitHub\HelperExpressions\src\obj\Debug\netstandard1.4\HelperExpressions.csprojResolveAssemblyReference.cache
 E:\GitHub\HelperExpressions\src\obj\Debug\netstandard1.4\HelperExpressions.AssemblyInfo.cs
 E:\GitHub\HelperExpressions\src\obj\Debug\netstandard1.4\HelperExpressions.dll
 E:\GitHub\HelperExpressions\src\obj\Debug\netstandard1.4\HelperExpressions.pdb
+E:\GitHub\HelperExpressions\src\obj\Debug\netstandard1.4\HelperExpressions.csprojResolveAssemblyReference.cache
