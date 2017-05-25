@@ -1,0 +1,14 @@
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\HelperExpressionsTest.deps.json
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\HelperExpressionsTest.runtimeconfig.json
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\HelperExpressionsTest.runtimeconfig.dev.json
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\HelperExpressionsTest.dll
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\HelperExpressionsTest.pdb
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\HelperExpressions.dll
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\HelperExpressions.pdb
+E:\GitHub\HelperExpressions\Test\obj\Debug\netcoreapp1.1\HelperExpressionsTest.csprojResolveAssemblyReference.cache
+E:\GitHub\HelperExpressions\Test\obj\Debug\netcoreapp1.1\HelperExpressionsTest.AssemblyInfo.cs
+E:\GitHub\HelperExpressions\Test\obj\Debug\netcoreapp1.1\HelperExpressionsTest.dll
+E:\GitHub\HelperExpressions\Test\obj\Debug\netcoreapp1.1\HelperExpressionsTest.pdb
