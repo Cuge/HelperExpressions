@@ -1,0 +1,16 @@
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\BenchmarkHelpers.deps.json
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\BenchmarkHelpers.runtimeconfig.json
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\BenchmarkHelpers.runtimeconfig.dev.json
+E:\GitHub\HelperExpressions\BenchmarkHelpers\obj\Release\netcoreapp1.1\BenchmarkHelpers.csprojResolveAssemblyReference.cache
+E:\GitHub\HelperExpressions\BenchmarkHelpers\obj\Release\netcoreapp1.1\BenchmarkHelpers.AssemblyInfo.cs
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\BenchmarkHelpers.dll
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\BenchmarkHelpers.pdb
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\HelperExpressions.dll
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\HelperExpressionsTest.dll
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\HelperExpressions.pdb
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Release\netcoreapp1.1\HelperExpressionsTest.pdb
+E:\GitHub\HelperExpressions\BenchmarkHelpers\obj\Release\netcoreapp1.1\BenchmarkHelpers.dll
+E:\GitHub\HelperExpressions\BenchmarkHelpers\obj\Release\netcoreapp1.1\BenchmarkHelpers.pdb

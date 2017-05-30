@@ -1,0 +1,45 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.0",
+    "signature": "8bc080b02121873fefe09ee480554a1ca5937eff"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.0": {
+      "benchmarkhelpers/1.0.0": {
+        "dependencies": {
+          "BenchmarkDotNet": "0.10.6",
+          "HelperExpressionsTest": "1.0.0"
+        },
+        "runtime": {
+          "BenchmarkHelpers.dll": {}
+        }
+      },
+      "benchmarkdotnet/0.10.6": {},
+      "helperexpressionstest/1.0.0": {
+        "runtime": {
+          "HelperExpressionsTest.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "benchmarkhelpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "benchmarkdotnet/0.10.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8TNHnsiTx930hg+SH/K4c4jgGJGz0TQyKeVyc0aJzZtmQ5q03KpRnITt8+w3q7yA+jIhA/FZihIdLaUR3Pv43w==",
+      "path": "benchmarkdotnet/0.10.6",
+      "hashPath": "benchmarkdotnet.0.10.6.nupkg.sha512"
+    },
+    "helperexpressionstest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

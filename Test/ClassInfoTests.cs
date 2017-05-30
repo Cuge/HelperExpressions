@@ -9,7 +9,7 @@ namespace HelperExpressionsTest
     [TestClass]
     public class ClassInfoTests
     {
-        private int _loadTestLoopCount = 10000000;
+        private int _loadTestLoopCount = 100000000;
         private ClassForTest _classForTest;
 
         [TestInitialize]
@@ -21,9 +21,9 @@ namespace HelperExpressionsTest
         [TestMethod]
         public void GetPropertyFuncTestInt()
         {
-            var info = new ClassInfos<ClassForTest>();
-            var method = info.GetPropertyFunc<int>("A");
-            var actual = (int)method(_classForTest);
+            var info = new ClassInfos();
+            var method = info.GetPropertyFunc<ClassForTest>("A");
+            var actual = (int)method((object)_classForTest);
             Assert.AreEqual(101, actual);
         }
 
@@ -31,8 +31,8 @@ namespace HelperExpressionsTest
         // [TestMethod]
         public void GetPropertyGetMethodInfoLoadTestInt()
         {
-            var info = new ClassInfos<ClassForTest>();
-            var method = info.GetPropertyGetMethodInfo("A");
+            var info = new ClassInfos();
+            var method = info.GetPropertyGetMethodInfo<ClassForTest>("A");
             for (int i = 0; i < _loadTestLoopCount; i++)
             {
                 var actual = (int)method.Invoke(_classForTest, null);
@@ -42,20 +42,20 @@ namespace HelperExpressionsTest
             //Assert.AreEqual(101, actual);
         }
 
-        [TestMethod]
-        public void GetPropertyDelegateLoadTestInt()
-        {
-            var info = new ClassInfos<ClassForTest>();
-            var method = info.GetPropertyDelegate("A");
-            for (int i = 0; i < _loadTestLoopCount; i++)
-            {
-                //var me = Convert.ChangeType(method, typeof(Func<ClassForTest, int>));
-                var actual = method(_classForTest);
-                if (actual != 101)
-                    throw new AssertFailedException($"Result was wrong {actual}");
-            }
-            //Assert.AreEqual(101, actual);
-        }
+        //[TestMethod]
+        //public void GetPropertyDelegateLoadTestInt()
+        //{
+        //    var info = new ClassInfos<ClassForTest>();
+        //    var method = info.GetPropertyDelegate("A");
+        //    for (int i = 0; i < _loadTestLoopCount; i++)
+        //    {
+        //        //var me = Convert.ChangeType(method, typeof(Func<ClassForTest, int>));
+        //        var actual = method(_classForTest);
+        //        if (actual != 101)
+        //            throw new AssertFailedException($"Result was wrong {actual}");
+        //    }
+        //    //Assert.AreEqual(101, actual);
+        //}
 
         [TestMethod]
         public void GetPropertyLoadTestInt()
@@ -72,8 +72,8 @@ namespace HelperExpressionsTest
         [TestMethod]
         public void GetPropertyFuncLoadTestInt()
         {
-            var info = new ClassInfos<ClassForTest>();
-            var method = info.GetPropertyFunc<int>("A");
+            var info = new ClassInfos();
+            var method = info.GetPropertyFunc<ClassForTest>("A");
             for (int i = 0; i < _loadTestLoopCount; i++)
             {
                 var actual = (int)method(_classForTest);
@@ -85,8 +85,8 @@ namespace HelperExpressionsTest
         [TestMethod]
         public void GetPropertyFuncLoadTestString()
         {
-            var info = new ClassInfos<ClassForTest>();
-            var method = info.GetPropertyFunc<string>("B");
+            var info = new ClassInfos();
+            var method = info.GetPropertyFunc<ClassForTest>("B");
             for (int i = 0; i < _loadTestLoopCount; i++)
             {
                 var actual = method(_classForTest);
@@ -95,6 +95,22 @@ namespace HelperExpressionsTest
             }
             //Assert.AreEqual(101, actual);
         }
+
+
+        // Too Slow 13Sec for 100,000,000
+        //[TestMethod]
+        //public void GetPropertyInfoTest()
+        //{
+        //    var info = new ClassInfos<ClassForTest>();
+        //    var propInfo = info.GetPropertyInfo("A");
+        //    for (int i = 0; i < _loadTestLoopCount; i++)
+        //    {
+        //        var actual =(int)propInfo.GetValue(_classForTest);
+        //        if (actual != 101)
+        //            throw new AssertFailedException($"Result was wrong {actual}");
+        //    }
+        //    //Assert.AreEqual(101, actual);
+        //}
 
     }
 

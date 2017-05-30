@@ -1,0 +1,5 @@
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Debug\netcoreapp1.0\BenchmarkHelpers.deps.json
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Debug\netcoreapp1.0\BenchmarkHelpers.runtimeconfig.json
+E:\GitHub\HelperExpressions\BenchmarkHelpers\bin\Debug\netcoreapp1.0\BenchmarkHelpers.runtimeconfig.dev.json
+E:\GitHub\HelperExpressions\BenchmarkHelpers\obj\Debug\netcoreapp1.0\BenchmarkHelpers.csprojResolveAssemblyReference.cache
+E:\GitHub\HelperExpressions\BenchmarkHelpers\obj\Debug\netcoreapp1.0\BenchmarkHelpers.AssemblyInfo.cs

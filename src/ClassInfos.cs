@@ -9,29 +9,42 @@ using TFun = System.Func<System.Collections.Generic.IDictionary<string, object>,
 
 namespace HelperExpressions
 {
-    public class ClassInfos<T>
+    public class ClassInfos
     {
-        private static readonly Type _type = typeof(T);
-        public Func<T, Tout> GetPropertyFunc<Tout> (string propertyName) 
+        //private static readonly Type _type = typeof(T);
+        public Func<object, object> GetPropertyFunc<T>(string propertyName) 
         {
-            ParameterExpression arg = Expression.Parameter(_type);
-            Expression expr = Expression.Property(arg, propertyName);
-            var propResolver = Expression.Lambda(expr, arg).Compile();
-            return propResolver;
+            var type = typeof(T);
+            ParameterExpression arg = Expression.Parameter(typeof(object));
+            var arg1 = Expression.Convert(arg, type);
+            //ParameterExpression arg1 = Expression.Parameter(type);
+            Expression expr = Expression.Property(arg1, propertyName);
+
+            var pro = Expression.Lambda(expr, arg);
+            Expression converted = Expression.Convert(pro.Body, typeof(object));
+            var newpro = Expression.Lambda<Func<object, object>>(converted, arg).Compile();
+            return newpro;
         }
 
-        public MethodInfo GetPropertyGetMethodInfo(string propertyName)
+         public MethodInfo GetPropertyGetMethodInfo<T>(string propertyName)
         {
-            return _type.GetRuntimeProperty(propertyName).GetMethod;
+            var type = typeof(T);
+            return type.GetRuntimeProperty(propertyName).GetMethod;
         }
 
-        public Func<T, int> GetPropertyDelegate(string propertyName)
+        public PropertyInfo GetPropertyInfo<T>(string propertyName)
         {
+            var type = typeof(T);
+            return type.GetRuntimeProperty(propertyName);
+        }
 
-            var pInfo = _type.GetRuntimeProperty(propertyName);
-            var delegateType = typeof(Func<,>).MakeGenericType(_type, pInfo.PropertyType);
-
-            return (Func<T, int>)pInfo.GetMethod.CreateDelegate(delegateType);
+        public Delegate GetPropertyDelegate<T>(string propertyName)
+        {
+            var type = typeof(T);
+            var pInfo = type.GetRuntimeProperty(propertyName);
+            var delegateType = typeof(Func<,>).MakeGenericType(type, pInfo.PropertyType);
+            var temp = pInfo.GetMethod.CreateDelegate(delegateType);
+            return temp;
         }
     }
 }
