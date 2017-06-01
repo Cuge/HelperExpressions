@@ -1,0 +1,151 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="EnvDTE" #>  
+<#@ import namespace="EnvDTE" #>  
+<#@ import namespace="System.IO" #>  
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.CodeDom.Compiler" #>
+<#@ output extension=".txt" #>
+<#@include file="FileManager.ttinclude" #>
+ 
+<# 
+	// Get the Visual Studio API as a service:  
+ var host = this.Host;
+ DTE dte = ((IServiceProvider)this.Host).GetService(typeof(DTE)) as DTE;    
+#>  
+// Number of projects in this solution: <#=  dte.Solution.Projects.Count #>  
+
+//        var visualStudio = (host as IServiceProvider).GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE;
+<#        var project = dte.Solution.FindProjectItem(host.TemplateFile).ContainingProject as EnvDTE.Project; #>
+
+
+<#  
+ // Find a path within the current project:  
+  string myFile = File.ReadAllText(this.Host.ResolvePath("Addtionals.cs"));  
+#>  
+// Content of myFile is:   
+<#= myFile #>  
+<# 
+var manager = new FileManager(Host, GenerationEnvironment, false) { OutputPath = Path.GetDirectoryName(Host.TemplateFile) }; #>
+<# manager.StartHeader(); #>
+  //Header Here
+
+
+<#
+    var namespaces = new List<string>();
+
+    foreach(EnvDTE.ProjectItem item in GetProjectItemsRecursively(project.ProjectItems))
+    {
+		if (item.FileCodeModel == null) continue;
+        foreach(EnvDTE.CodeElement elem in item.FileCodeModel.CodeElements)
+
+        {
+		 
+            if (elem.Kind == EnvDTE.vsCMElement.vsCMElementNamespace //&& !namespaces.Contains(elem.FullName)
+			) 
+			{
+               namespaces.Add(elem.FullName);
+			}
+        }
+
+    }
+	foreach(string name in namespaces)
+	{
+#>
+name space <#= name #>
+<#
+	}
+#>
+
+
+<# 
+	var classes = GetCodeItemsRecursively(project.CodeModel.CodeElements);
+	foreach(var name in classes)
+	{
+#>
+class name <#= name.Name #>
+<#
+	}
+#>
+-------------------------------------------------
+
+<#
+
+  var codeNamesapces = project.CodeModel.CodeElements.OfType<EnvDTE.CodeNamespace>();
+                                        // .Where(cn => namespaces.Contains(cn.FullName);
+    foreach(EnvDTE.CodeNamespace ns in codeNamesapces)
+
+    {
+
+        foreach(EnvDTE.CodeClass cc in ns.Members.OfType<EnvDTE.CodeClass>())
+
+        {
+
+#>
+<#= cc.FullName #>
+<#      }
+
+    }
+#>
+
+
+
+
+// End of header
+
+<# manager.EndHeader(); #>
+
+<# manager.StartFooter(); #>
+  //Footer
+<# manager.EndFooter(); #>
+
+
+<# manager.StartBlock("Test_11"); #>
+public partial class 
+121233
+<# manager.EndBlock(); #>
+
+<# manager.StartBlock("Test_12"); #>
+//	My Test Block 12 
+44445
+<# manager.EndBlock(); #>
+
+<# manager.Process(true); #>
+
+
+
+
+
+<#+
+  public List<EnvDTE.ProjectItem> GetProjectItemsRecursively(EnvDTE.ProjectItems items)
+  {
+      var ret = new List<EnvDTE.ProjectItem>();
+      if (items == null) return ret;
+      foreach(EnvDTE.ProjectItem item in items)
+      {
+        ret.Add(item);
+        ret.AddRange(GetProjectItemsRecursively(item.ProjectItems));
+      }
+      return ret;
+  }
+#>
+
+<#+
+    public List<EnvDTE.CodeElement> GetCodeItemsRecursively(EnvDTE.CodeElements items)
+    {
+        var ret = new List<EnvDTE.CodeElement>();
+        if (items == null) return ret;
+        foreach (EnvDTE.CodeElement item in items)
+        {
+            if(item.Kind == EnvDTE.vsCMElement.vsCMElementClass)
+			{
+	            ret.Add(item);
+			}
+        }
+        return ret;
+    }
+#>
+
+

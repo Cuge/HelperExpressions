@@ -1,0 +1,10 @@
+﻿  
+  
+  
+ 
+  
+// Number of projects in this solution: 2  
+
+//        var visualStudio = (host as IServiceProvider).GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE;
+
+

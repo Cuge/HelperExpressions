@@ -42,20 +42,20 @@ namespace HelperExpressionsTest
             //Assert.AreEqual(101, actual);
         }
 
-        //[TestMethod]
-        //public void GetPropertyDelegateLoadTestInt()
-        //{
-        //    var info = new ClassInfos<ClassForTest>();
-        //    var method = info.GetPropertyDelegate("A");
-        //    for (int i = 0; i < _loadTestLoopCount; i++)
-        //    {
-        //        //var me = Convert.ChangeType(method, typeof(Func<ClassForTest, int>));
-        //        var actual = method(_classForTest);
-        //        if (actual != 101)
-        //            throw new AssertFailedException($"Result was wrong {actual}");
-        //    }
-        //    //Assert.AreEqual(101, actual);
-        //}
+        [TestMethod]
+        public void GetPropertyDelegateLoadTestInt()
+        {
+            var info = new ClassInfos();
+            var method = info.GetPropertyDelegate<ClassForTest>("A") as Func<ClassForTest, int>;
+            for (int i = 0; i < _loadTestLoopCount; i++)
+            {
+                //var me = Convert.ChangeType(method, typeof(Func<ClassForTest, int>));
+                var actual = method(_classForTest);
+                if ((int)actual != 101)
+                    throw new AssertFailedException($"Result was wrong {actual}");
+            }
+            //Assert.AreEqual(101, actual);
+        }
 
         [TestMethod]
         public void GetPropertyLoadTestInt()

@@ -17,17 +17,17 @@ BenchmarkDotNet=v0.10.6, OS=Windows 7 SP1 (6.1.7601)
 Processor=Intel Core i7-4771 CPU 3.50GHz (Haswell), ProcessorCount=8
 Frequency=3418183 Hz, Resolution=292.5531 ns, Timer=TSC
 dotnet cli version=1.0.4
-  [Host]     : .NET Core 4.6.25211.01, 64bit RyuJIT [AttachedDebugger]
+  [Host]     : .NET Core 4.6.25211.01, 64bit RyuJIT
   DefaultJob : .NET Core 4.6.25211.01, 64bit RyuJIT
 </code></pre>
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+<thead><tr><th>   Method</th><th>   Mean</th><th>Error</th><th>StdDev</th><th>Scaled</th><th>ScaledSD</th>
 </tr>
-</thead><tbody><tr><td> Test1</td><td>16.9160 ns</td><td>0.3638 ns</td><td>0.6275 ns</td>
-</tr><tr><td>TestDirect</td><td>0.3105 ns</td><td>0.0228 ns</td><td>0.0202 ns</td>
-</tr><tr><td>TestBoxUnbox</td><td>0.3333 ns</td><td>0.0238 ns</td><td>0.0211 ns</td>
+</thead><tbody><tr><td>TestDelegateGet</td><td>12,277.760 ns</td><td>238.3868 ns</td><td>244.8057 ns</td><td>2,086.71</td><td>67.57</td>
+</tr><tr><td>    Test1</td><td>115.554 ns</td><td>11.9301 ns</td><td>15.9264 ns</td><td>19.64</td><td>2.70</td>
+</tr><tr><td>TestDirect</td><td>5.888 ns</td><td>0.1457 ns</td><td>0.1559 ns</td><td>1.00</td><td>0.00</td>
 </tr></tbody></table>
 </body>
 </html>
