@@ -1,15 +1,17 @@
 ﻿<#@ template debug="true" hostspecific="true" language="C#" #>
 <#@ assembly name="System.Core" #>
 <#@ assembly name="EnvDTE" #>  
+<#@ assembly name="$(SolutionDir)\T4HelperMethods.dll" #>  
+<#@ import namespace="T4HelperMethods" #>
 <#@ import namespace="EnvDTE" #>  
 <#@ import namespace="System.IO" #>  
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Text" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="System.CodeDom.Compiler" #>
-<#@ output extension=".txt" #>
-<#@include file="FileManager.ttinclude" #>
- 
+<#@ output extension=".txt" #> 
+
+  
 <# 
 	// Get the Visual Studio API as a service:  
  var host = this.Host;
@@ -23,12 +25,12 @@
 
 <#  
  // Find a path within the current project:  
-  string myFile = File.ReadAllText(this.Host.ResolvePath("Addtionals.cs"));  
+  string myFile = File.ReadAllText(this.Host.ResolvePath("Additional.cs"));  
 #>  
 // Content of myFile is:   
 <#= myFile #>  
 <# 
-var manager = new FileManager(Host, GenerationEnvironment, false) { OutputPath = Path.GetDirectoryName(Host.TemplateFile) }; #>
+var manager = new T4BlockManager(Host, GenerationEnvironment, false) { OutputPath = Path.GetDirectoryName(Host.TemplateFile) }; #>
 <# manager.StartHeader(); #>
   //Header Here
 

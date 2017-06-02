@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{58CAB470-13B6-4081-AB6D-5DE83FAE3122}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelperExpressionsTest", "Test\HelperExpressionsTest.csproj", "{5BCE2836-570F-4B90-A04C-AA634950A2EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkHelpers", "BenchmarkHelpers\BenchmarkHelpers.csproj", "{5B3A5586-E2BD-4867-973C-721E1D1FC46A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T4HelperMethods", "T4HelperMethods\T4HelperMethods.csproj", "{A0FED90D-7886-49F2-9897-0A11C1BA850E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{5B3A5586-E2BD-4867-973C-721E1D1FC46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B3A5586-E2BD-4867-973C-721E1D1FC46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B3A5586-E2BD-4867-973C-721E1D1FC46A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FED90D-7886-49F2-9897-0A11C1BA850E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FED90D-7886-49F2-9897-0A11C1BA850E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FED90D-7886-49F2-9897-0A11C1BA850E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FED90D-7886-49F2-9897-0A11C1BA850E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
