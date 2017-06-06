@@ -17,7 +17,7 @@ namespace T4HelperMethods
             _DTE = GetEnvDTE(host);
         }
 
-        public List<EnvDTE.ProjectItem> GetProjectItemsRecursively(EnvDTE.ProjectItems items)
+        public IList<EnvDTE.ProjectItem> GetProjectItemsRecursively(EnvDTE.ProjectItems items)
         {
             var ret = new List<EnvDTE.ProjectItem>();
             if (items == null) return ret;
@@ -29,9 +29,9 @@ namespace T4HelperMethods
             return ret;
         }
 
-        public IEnumerable<CodeClass> GetCodeClasses(EnvDTE.ProjectItems items)
+        public IList<CodeClass> GetCodeClasses(EnvDTE.ProjectItems items)
         {
-            IEnumerable<ProjectItem> projectItems = GetProjectItemsRecursively(items);
+            IList<ProjectItem> projectItems = GetProjectItemsRecursively(items);
             List<CodeClass> ret = new List<CodeClass>();
             foreach (ProjectItem projectItem in projectItems)
             {
@@ -39,19 +39,41 @@ namespace T4HelperMethods
             }
             return ret;
         }
-        public IEnumerable<CodeClass> GetCodeClasses(ProjectItem item)
+
+         public IList<CodeClass> GetCodeClasses(ProjectItem item)
         {
             List<CodeClass> ret = new List<CodeClass>();
             if(item.FileCodeModel != null)
             {
-                foreach (EnvDTE.CodeElement codeElement in item.FileCodeModel.CodeElements)
-                {
-                    CodeClass codeClass = codeElement as CodeClass;
-                    if (codeClass != null)
-                        ret.Add(codeClass);
-                }
+                FindClasses(item.FileCodeModel.CodeElements, ret);
             }
             return ret;
+        }
+
+         private void FindClasses(CodeElements elements, List<CodeClass> result)
+        {
+            if (elements == null) return;
+            foreach (CodeElement element in elements)
+            {
+                if (element is CodeNamespace)
+                {
+                    CodeNamespace ns = element as CodeNamespace;
+                    if (ns != null)
+                    {
+                        FindClasses(ns.Members, result);
+                    }
+                }
+                else if (element is CodeClass)
+                {
+                    CodeClass c = element as CodeClass;
+                    if (c != null)
+                    {
+                        result.Add(c);
+                        FindClasses(c.Members, result);
+                    }
+
+                }
+            }
         }
 
         public CodeNamespace FindNamespace(CodeElements elements)
@@ -80,7 +102,7 @@ namespace T4HelperMethods
             return null;
         }
 
-        public List<CodeFunction> FindMethods(CodeElements elements)
+        public IList<CodeFunction> FindMethods(CodeElements elements)
         {
             List<CodeFunction> methods = new List<CodeFunction>();
 
@@ -105,5 +127,6 @@ namespace T4HelperMethods
                 throw new Exception("Unable to retrieve EnvDTE.DTE");
             return dte;
         }
-    }
+
+     }
 }
