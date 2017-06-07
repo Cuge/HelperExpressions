@@ -1,0 +1,60 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="EnvDTE" #>  
+<#@ assembly name="$(SolutionDir)\T4HelperMethods\bin\Release\T4HelperMethods.dll" #>  
+<#@ import namespace="T4HelperMethods" #>
+<#@ import namespace="EnvDTE" #>  
+<#@ import namespace="System.IO" #>  
+<#@ import namespace="System.Linq" #> 
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.CodeDom.Compiler" #>
+<#@ output extension=".txt" #> 
+<#@ include file="BlockManager.ttinclude" once="true" #>
+<# 
+// Get the Visual Studio API as a service:
+var host = this.Host; 
+DTE dte = ((IServiceProvider)host).GetService(typeof(DTE)) as DTE;    
+AutomationHelper automationHelper = new AutomationHelper(host);
+var project = dte.Solution.FindProjectItem(host.TemplateFile).ContainingProject as EnvDTE.Project; 
+//var project = automationHelper.GetProject("HelperExpressionsTest.proj");
+string myFile = File.ReadAllText(host.ResolvePath("Additional.cs.include"));  
+string outputPath = Path.GetDirectoryName(host.TemplateFile);
+var manager = new T4BlockManagerNew(host, GenerationEnvironment, true) { OutputPath = outputPath}; 
+var envDteHelper = new EnvHelperMethods(host);
+var allClasses = envDteHelper.GetCodeClasses(project.ProjectItems); 
+#> 
+// Total Project Count <#=  dte.Solution.Projects.Count #> 
+// Total Clases is <#= allClasses.Count #>
+<# manager.StartHeader(); #> 
+//This is generated file, please do not edit by hand 
+//Weihua Li 
+<# manager.EndHeader(); #>
+<# manager.StartFooter(); #>
+<# manager.EndFooter(); #>
+
+<# 
+
+foreach(CodeClass curClass in allClasses) 
+{
+	manager.StartBlock(curClass.FullName + ".cs"); 
+	StringBuilder fileContent = new StringBuilder();  
+#> 
+<#= myFile #>
+<#
+	manager.EndBlock(); 
+} 
+#>
+ 
+<#
+foreach(Project proj in automationHelper.GetAllProjects())
+{
+#>
+<#= proj.Name #>
+<#
+}
+#>
+
+
+
+<# manager.Process(true); #>

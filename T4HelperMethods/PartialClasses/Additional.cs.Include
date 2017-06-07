@@ -1,0 +1,7 @@
+using System;
+
+public partial class Addtional
+{
+    public int X { get; set; }
+    public string Y { get; set; }
+}

@@ -89,6 +89,7 @@ E:\GitHub\HelperExpressions\T4HelperMethods\bin\Release\ru\Microsoft.VisualStudi
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Release\tr\Microsoft.VisualStudio.Threading.resources.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Release\zh-Hans\Microsoft.VisualStudio.Threading.resources.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Release\zh-Hant\Microsoft.VisualStudio.Threading.resources.dll
-E:\GitHub\HelperExpressions\T4HelperMethods\obj\Release\T4HelperMethods.csprojResolveAssemblyReference.cache
 E:\GitHub\HelperExpressions\T4HelperMethods\obj\Release\T4HelperMethods.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\obj\Release\T4HelperMethods.pdb
+E:\GitHub\HelperExpressions\T4HelperMethods\bin\Release\stdole.dll
+E:\GitHub\HelperExpressions\T4HelperMethods\obj\Release\T4HelperMethods.csprojResolveAssemblyReference.cache
