@@ -53,40 +53,49 @@
       <summary>Raised when a stream is deleted.</summary>
     </member>
     <member name="F:Microsoft.VisualStudio.PlatformUI.Boxes.BooleanFalse">
-      <summary>Value of false.</summary>
+      <summary>Value of <see langword="false" />.</summary>
     </member>
     <member name="F:Microsoft.VisualStudio.PlatformUI.Boxes.BooleanTrue">
-      <summary>Value of true.</summary>
+      <summary>Value of <see langword="true" />.</summary>
     </member>
     <member name="F:Microsoft.VisualStudio.PlatformUI.Boxes.DoubleZero">
       <summary />
-      <returns />
     </member>
     <member name="F:Microsoft.VisualStudio.PlatformUI.Boxes.Int32One">
       <summary />
-      <returns />
     </member>
     <member name="F:Microsoft.VisualStudio.PlatformUI.Boxes.Int32Zero">
       <summary />
-      <returns />
     </member>
     <member name="F:Microsoft.VisualStudio.PlatformUI.Boxes.UInt32One">
       <summary />
-      <returns />
     </member>
     <member name="F:Microsoft.VisualStudio.PlatformUI.Boxes.UInt32Zero">
       <summary />
-      <returns />
     </member>
     <member name="F:Microsoft.VisualStudio.PlatformUI.Boxes.UInt64Zero">
       <summary />
-      <returns />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.ServiceHubPubSubTopic.SettingChanged">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.ServiceHubPubSubTopic.SettingsEvent">
+      <summary />
     </member>
     <member name="F:Microsoft.VisualStudio.Utilities.Dpi.DpiHelper.DefaultLogicalDpi">
       <summary>The default logical DPI.</summary>
     </member>
     <member name="F:Microsoft.VisualStudio.Utilities.FileStreamStorage`1.AllExtensions">
       <summary>Represents all file extensions.</summary>
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.FontColorEntry.DefaultMergePriority">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.FontColorTheme.VersionWithFontColor">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.FontColorTheme.VersionWithOnlyColor">
+      <summary />
     </member>
     <member name="F:Microsoft.VisualStudio.Utilities.Tracer.IndentString">
       <summary>The indent string.</summary>
@@ -99,6 +108,186 @@
     </member>
     <member name="F:Microsoft.VisualStudio.Utilities.VersionedBinaryWriter.HeaderLength">
       <summary>The length in bytes of the version header written to the VersionedBinaryWriter's stream.</summary>
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.IVsEtwActivityEventWriter.OnActivityAbort(Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo)">
+      <summary />
+      <param name="activityInfo" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.IVsEtwActivityEventWriter.OnActivityStart(Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo)">
+      <summary />
+      <param name="activityInfo" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.IVsEtwActivityEventWriter.OnActivityStart``1(Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo,``0)">
+      <summary />
+      <param name="activityInfo" />
+      <param name="data" />
+      <typeparam name="T" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.IVsEtwActivityEventWriter.OnActivityStop(Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo)">
+      <summary />
+      <param name="activityInfo" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.IVsEtwActivityEventWriter.OnActivityStop``1(Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo,``0)">
+      <summary />
+      <param name="activityInfo" />
+      <param name="data" />
+      <typeparam name="T" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity.Abort">
+      <summary />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity.Dispose">
+      <summary />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity.End">
+      <summary />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity.End``1(``0)">
+      <summary />
+      <param name="data" />
+      <typeparam name="T" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo.#ctor(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel)">
+      <summary />
+      <param name="name" />
+      <param name="keyword" />
+      <param name="level" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo.#ctor(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,System.Guid)">
+      <summary />
+      <param name="name" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="relatedActivityId" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo.#ctor(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,System.Guid,System.Guid)">
+      <summary />
+      <param name="name" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="activityId" />
+      <param name="relatedActivityId" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.CreateActivity(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel)">
+      <summary />
+      <param name="activityName" />
+      <param name="keyword" />
+      <param name="level" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.CreateActivity(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity)">
+      <summary />
+      <param name="activityName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="relatedActivity" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.CreateActivity``1(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,``0)">
+      <summary />
+      <param name="activityName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="data" />
+      <typeparam name="T" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.CreateActivity``1(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity,``0)">
+      <summary />
+      <param name="activityName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="relatedActivity" />
+      <param name="data" />
+      <typeparam name="T" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.IsProviderEnabled(Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel)">
+      <summary />
+      <param name="keywords" />
+      <param name="level" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteActivityStart(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,System.Guid,System.Guid)">
+      <summary />
+      <param name="activityName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="activityId" />
+      <param name="relatedActivityId" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteActivityStart``1(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,System.Guid,System.Guid,``0)">
+      <summary />
+      <param name="activityName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="activityId" />
+      <param name="relatedActivityId" />
+      <param name="data" />
+      <typeparam name="T" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteActivityStop(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,System.Guid,System.Guid)">
+      <summary />
+      <param name="activityName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="activityId" />
+      <param name="relatedActivityId" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteActivityStop``1(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,System.Guid,System.Guid,``0)">
+      <summary />
+      <param name="activityName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="activityId" />
+      <param name="relatedActivityId" />
+      <param name="data" />
+      <typeparam name="T" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteEvent(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords)">
+      <summary />
+      <param name="eventName" />
+      <param name="keyword" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteEvent(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel)">
+      <summary />
+      <param name="eventName" />
+      <param name="keyword" />
+      <param name="level" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteEvent(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity)">
+      <summary />
+      <param name="eventName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="relatedActivity" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteEvent(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,System.Guid)">
+      <summary />
+      <param name="eventName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="relatedActivityId" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteEvent``1(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,``0)">
+      <summary />
+      <param name="eventName" />
+      <param name="keyword" />
+      <param name="data" />
+      <typeparam name="T" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteEvent``1(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,``0,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity)">
+      <summary />
+      <param name="eventName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="data" />
+      <param name="relatedActivity" />
+      <typeparam name="T" />
+    </member>
+    <member name="M:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging.WriteEvent``1(System.String,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords,Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel,``0,System.Guid)">
+      <summary />
+      <param name="eventName" />
+      <param name="keyword" />
+      <param name="level" />
+      <param name="data" />
+      <param name="relatedActivityId" />
+      <typeparam name="T" />
     </member>
     <member name="M:Microsoft.VisualStudio.FeatureFlags.FeatureFlag.#ctor(System.String,System.Boolean)">
       <summary>Initializes an instance of FeatureFlag with the given name and state. FeatureFlag objects are immutable.</summary>
@@ -155,32 +344,28 @@
     <member name="M:Microsoft.VisualStudio.PlatformUI.Boxes.Box(System.Boolean)">
       <summary>Gets the box value specified.</summary>
       <param name="value">The value to return box value for.</param>
-      <returns>Returns true if the value is true; otherwise returns false.</returns>
+      <returns>Returns <see langword="true" /> if the value is true; otherwise returns <see langword="false" />.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.Boxes.Box(System.Double)">
       <summary />
       <param name="value" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.Boxes.Box(System.Int32)">
       <summary />
       <param name="value" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.Boxes.Box(System.Nullable{System.Boolean})">
       <summary>Gets the box value specified.</summary>
       <param name="nullableValue">Value to get box value for.</param>
-      <returns>Returns the value if not null; otherwise returns null.</returns>
+      <returns>Returns the value if not <see langword="null" />; otherwise returns <see langword="null" />.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.Boxes.Box(System.UInt32)">
       <summary />
       <param name="value" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.Boxes.Box(System.UInt64)">
       <summary />
       <param name="value" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.BrushToColorConverter.#ctor">
       <summary>Creates a new instance of the class.</summary>
@@ -221,7 +406,7 @@
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.DisposableObject.Dispose(System.Boolean)">
       <summary> Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. Standard virtual overload for <see cref="T:System.IDisposable" /> pattern.</summary>
-      <param name="disposing">If true, this is a call to <see cref="M:System.IDisposable.Dispose" />. If false, it means this method has been called from the finalizer.</param>
+      <param name="disposing">If <see langword="true" />, this is a call to <see cref="M:System.IDisposable.Dispose" />. If <see langword="false" />, it means this method has been called from the finalizer.</param>
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.DisposableObject.DisposeManagedResources">
       <summary>Allows derived classes to provide custom dispose handling for managed resources.</summary>
@@ -235,11 +420,22 @@
     <member name="M:Microsoft.VisualStudio.PlatformUI.DisposableObject.ThrowIfDisposed">
       <summary>Throws an <see cref="T:System.ObjectDisposedException" /> if this object has been disposed.</summary>
     </member>
+    <member name="M:Microsoft.VisualStudio.PlatformUI.DisposableWrapper.#ctor(System.IDisposable)">
+      <summary />
+      <param name="wrappedDisposable" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.PlatformUI.DisposableWrapper.#ctor(System.IDisposable,System.EventHandler)">
+      <summary />
+      <param name="wrappedDisposable" />
+      <param name="disposeEventHandler" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.PlatformUI.DisposableWrapper.DisposeManagedResources">
+      <summary />
+    </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.AcquireWin32Focus(System.Windows.DependencyObject,System.IntPtr@)">
       <summary>Microsoft internal use only.</summary>
       <param name="obj" />
       <param name="previousFocus" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.AddPropertyChangeHandler``1(``0,System.Windows.DependencyProperty,System.EventHandler)">
       <summary>Adds a handler that is called when <paramref name="property" /> changes on <paramref name="instance" />.</summary>
@@ -267,13 +463,12 @@
       <param name="parentEvaluator" />
       <param name="ancestorSelector" />
       <typeparam name="TElementType" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.FindAncestor``1(System.Windows.Media.Visual)">
       <summary>Finds the first ancestor of a given type in the logical or visual tree.</summary>
       <param name="obj">The object at which to begin searching.</param>
       <typeparam name="TAncestorType">The type of ancestor to find.</typeparam>
-      <returns>The first ancestor of type T in the parent chain of <paramref name="obj" />, or null if no ancestor is found</returns>
+      <returns>The first ancestor of type T in the parent chain of <paramref name="obj" />, or <see langword="null" /> if no ancestor is found</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.FindAncestor``2(``1,System.Func{``1,``1})">
       <summary>Microsoft internal use only.</summary>
@@ -288,7 +483,6 @@
       <param name="parentEvaluator" />
       <param name="ancestorSelector" />
       <typeparam name="TElementType" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.FindAncestorOrSelf``1(System.Windows.Media.Visual)">
       <summary>Finds the first ancestor of a given type in the logical or visual tree, or the object itself if it matches in type.</summary>
@@ -302,13 +496,11 @@
       <param name="parentEvaluator" />
       <typeparam name="TAncestorType" />
       <typeparam name="TElementType" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.FindCommonAncestor(System.Windows.DependencyObject,System.Windows.DependencyObject)">
       <summary>Microsoft internal use only.</summary>
       <param name="obj1">The first object.</param>
       <param name="obj2">The second object.</param>
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.FindCommonAncestor``1(``0,``0,System.Func{``0,``0})">
       <summary>Microsoft internal use only.</summary>
@@ -339,44 +531,37 @@
       <summary>Microsoft internal use only.</summary>
       <param name="obj" />
       <typeparam name="T" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.FindDescendantsReverse``1(System.Windows.DependencyObject)">
       <summary>Microsoft internal use only.</summary>
       <param name="obj" />
       <typeparam name="T" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.GetDoubleAttribute(System.Xml.XmlReader,System.String,System.Double)">
       <summary />
       <param name="reader" />
       <param name="attributeName" />
       <param name="defaultValue" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.GetGuidAttribute(System.Xml.XmlReader,System.String)">
       <summary />
       <param name="reader" />
       <param name="attributeName" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.GetIntAttribute(System.Xml.XmlReader,System.String,System.Int32)">
       <summary />
       <param name="reader" />
       <param name="attributeName" />
       <param name="defaultValue" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.GetValueIfCreated``1(System.Lazy{``0})">
       <summary />
       <param name="lazy" />
       <typeparam name="T" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.GetVisualOrLogicalParent(System.Windows.DependencyObject)">
       <summary>Microsoft internal use only.</summary>
       <param name="sourceElement">The object to begin searching from.</param>
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.IsAncestorOf``1(``0,``0,System.Func{``0,``0})">
       <summary>Microsoft internal use only.</summary>
@@ -384,7 +569,6 @@
       <param name="other">The descendent element.</param>
       <param name="parentEvaluator">The function used to determine an element's parent.</param>
       <typeparam name="TElementType" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.IsClipped(System.Windows.UIElement)">
       <summary>Determines whether the element's text is clipped by a parent ScrollViewer (the element can still be scrolled to view the clipped text)</summary>
@@ -394,24 +578,20 @@
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.IsConnectedToPresentationSource(System.Windows.DependencyObject)">
       <summary>Microsoft internal use only.</summary>
       <param name="obj" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.IsCritical(System.Exception)">
       <summary />
       <param name="ex" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.IsLogicalAncestorOf(System.Windows.DependencyObject,System.Windows.DependencyObject)">
       <summary>Microsoft internal use only.</summary>
       <param name="element">The ancestor element.</param>
       <param name="other">The descendent element.</param>
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.IsNearlyEqual(System.Double,System.Double)">
       <summary>Microsoft internal use only.</summary>
       <param name="value1">First double to compare.</param>
       <param name="value2">Second double to compare.</param>
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.IsSignificantlyGreaterThan(System.Double,System.Double)">
       <summary>Determines whether the first value is significantly greater than the second value.</summary>
@@ -433,7 +613,6 @@
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.IsTopmost(System.IntPtr)">
       <summary>Microsoft internal use only.</summary>
       <param name="hWnd">The HWND to test.</param>
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.IsTrimmed(System.Windows.UIElement)">
       <summary>Microsoft internal use only.</summary>
@@ -506,7 +685,6 @@
       <param name="source" />
       <param name="args" />
       <typeparam name="T" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.RemovePropertyChangeHandler``1(``0,System.Windows.DependencyProperty,System.EventHandler)">
       <summary>Microsoft internal use only.</summary>
@@ -546,17 +724,14 @@
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.ToDimensionString(System.Windows.Size)">
       <summary />
       <param name="size" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.ToLowercaseString(System.Nullable{System.Windows.Media.Color})">
       <summary />
       <param name="color" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.ToLowercaseString(System.Windows.Media.Color)">
       <summary />
       <param name="color" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ExtensionMethods.ToRgba(System.Windows.Media.Color)">
       <summary>Microsoft internal use only.</summary>
@@ -579,54 +754,49 @@
       <summary>Determines whether the absolute value of the difference between the specified values is less than the double value 0.00000153. </summary>
       <param name="value1">The first value for comparison.</param>
       <param name="value2">The second value for comparison.</param>
-      <returns>Returns true if the difference between the values is less than 0.00000153; otherwise returns false.</returns>
+      <returns>Returns <see langword="true" /> if the difference between the values is less than 0.00000153; otherwise returns <see langword="false" />.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.LayoutDoubleUtil.AreClose(System.Windows.Point,System.Windows.Point)">
       <summary />
       <param name="size1" />
       <param name="size2" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.LayoutDoubleUtil.AreClose(System.Windows.Rect,System.Windows.Rect)">
       <summary>Determines whether the absolute values of the differences between the left positions, top positions, heights and widths of the specified rectangles are less than the double value 0.00000153.</summary>
       <param name="rect1">The first rectangle for comparison.</param>
       <param name="rect2">The second rectangle for comparison.</param>
-      <returns>Returns true if the differences between the values are less than 0.00000153; otherwise returns false.</returns>
+      <returns>Returns <see langword="true" /> if the differences between the values are less than 0.00000153; otherwise returns <see langword="false" />.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.LayoutDoubleUtil.AreClose(System.Windows.Size,System.Windows.Size)">
       <summary />
       <param name="size1" />
       <param name="size2" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.LayoutDoubleUtil.GreaterThan(System.Double,System.Double)">
       <summary>Determines whether the first specified value is greater than the second specified value and the values are not within 0.00000153 of each other.</summary>
       <param name="value1">The first value for comparison.</param>
       <param name="value2">The second value for comparison.</param>
-      <returns>Returns true if the first value is greater than the second value and the values are not within 0.00000153 of each other; otherwise returns false.</returns>
+      <returns>Returns <see langword="true" /> if the first value is greater than the second value and the values are not within 0.00000153 of each other; otherwise returns <see langword="false" />.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.LayoutDoubleUtil.GreaterThanOrClose(System.Double,System.Double)">
       <summary />
       <param name="value1" />
       <param name="value2" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.LayoutDoubleUtil.IsNonreal(System.Double)">
       <summary />
       <param name="value" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.LayoutDoubleUtil.LessThan(System.Double,System.Double)">
       <summary>Determines whether the first specified value is less than the second specified value and the values are not within 0.00000153 of each other.</summary>
       <param name="value1">The first value for comparison.</param>
       <param name="value2">The second value for comparison.</param>
-      <returns>Returns true if the first value is less than the second value and the values are not within 0.00000153 of each other; otherwise returns false.</returns>
+      <returns>Returns <see langword="true" /> if the first value is less than the second value and the values are not within 0.00000153 of each other; otherwise returns <see langword="false" />.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.LayoutDoubleUtil.LessThanOrClose(System.Double,System.Double)">
       <summary />
       <param name="value1" />
       <param name="value2" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`10.#ctor">
       <summary>Initializes a new instance of MultiValueConverter.</summary>
@@ -746,7 +916,6 @@
       <param name="value11" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`12.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)">
       <summary />
@@ -754,7 +923,6 @@
       <param name="targetType" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`12.ConvertBack(`11,`0@,`1@,`2@,`3@,`4@,`5@,`6@,`7@,`8@,`9@,`10@,System.Object,System.Globalization.CultureInfo)">
       <summary />
@@ -779,7 +947,6 @@
       <param name="targetTypes" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`3.#ctor">
       <summary>Microsoft internal use only.</summary>
@@ -797,7 +964,6 @@
       <param name="targetType" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`3.ConvertBack(`2,`0@,`1@,System.Object,System.Globalization.CultureInfo)">
       <summary>Microsoft internal use only.</summary>
@@ -813,7 +979,6 @@
       <param name="targetTypes" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`4.#ctor">
       <summary>Microsoft internal use only.</summary>
@@ -832,7 +997,6 @@
       <param name="targetType" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`4.ConvertBack(`3,`0@,`1@,`2@,System.Object,System.Globalization.CultureInfo)">
       <summary>Microsoft internal use only.</summary>
@@ -849,7 +1013,6 @@
       <param name="targetTypes" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`5.#ctor">
       <summary>Microsoft internal use only.</summary>
@@ -870,7 +1033,6 @@
       <param name="targetType" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`5.ConvertBack(`4,`0@,`1@,`2@,`3@,System.Object,System.Globalization.CultureInfo)">
       <summary>Microsoft internal use only.</summary>
@@ -888,7 +1050,6 @@
       <param name="targetTypes" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`6.#ctor">
       <summary>Microsoft internal use only.</summary>
@@ -910,7 +1071,6 @@
       <param name="targetType" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`6.ConvertBack(`5,`0@,`1@,`2@,`3@,`4@,System.Object,System.Globalization.CultureInfo)">
       <summary>Microsoft internal use only.</summary>
@@ -929,7 +1089,6 @@
       <param name="targetTypes" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.MultiValueConverter`7.#ctor">
       <summary>Initializes a new instance of MultiValueConverter.</summary>
@@ -1113,14 +1272,12 @@
       <param name="field" />
       <param name="newValue" />
       <param name="propertyName" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ObservableObject.SetProperty(System.UIntPtr@,System.UIntPtr,System.String)">
       <summary />
       <param name="field" />
       <param name="newValue" />
       <param name="propertyName" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ObservableObject.SetProperty``1(``0@,``0,System.Action,System.String)">
       <summary />
@@ -1129,7 +1286,6 @@
       <param name="beforeNotifyAction" />
       <param name="propertyName" />
       <typeparam name="T" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ObservableObject.SetProperty``1(``0@,``0,System.Action{``0,``0},System.String)">
       <summary />
@@ -1138,7 +1294,6 @@
       <param name="beforeNotifyAction" />
       <param name="propertyName" />
       <typeparam name="T" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ObservableObject.SetProperty``1(``0@,``0,System.String)">
       <summary />
@@ -1146,7 +1301,6 @@
       <param name="newValue" />
       <param name="propertyName" />
       <typeparam name="T" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.PathUtil.ArePathsEqual(System.String,System.String)">
       <summary>Determines whether two paths are equal. This method does not treat Path.DirectorySeparatorChar and Path.AltDirectorySeparatorChar as equivalent.</summary>
@@ -1233,7 +1387,6 @@
       <param name="targetType" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.ValueConverter`2.ConvertBack(`1,System.Object,System.Globalization.CultureInfo)">
       <summary>Microsoft internal use only.</summary>
@@ -1248,7 +1401,6 @@
       <param name="targetType" />
       <param name="parameter" />
       <param name="culture" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.WeakCollection`1.#ctor">
       <summary>Microsoft internal use only.</summary>
@@ -1267,15 +1419,14 @@
     <member name="M:Microsoft.VisualStudio.PlatformUI.WeakCollection`1.Remove(`0)">
       <summary>Microsoft internal use only. Removes an item from the underlying collection, if it exists.</summary>
       <param name="item">The item to remove.</param>
-      <returns>Returns true if the item was found and removed; otherwise returns false.</returns>
+      <returns>
+          Returns <see langword="true" /> if the item was found and removed; otherwise returns <see langword="false" />.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.WeakCollection`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">
       <summary>Microsoft internal use only.</summary>
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.WeakCollection`1.System#Collections#IEnumerable#GetEnumerator">
       <summary>Microsoft internal use only.</summary>
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.PlatformUI.WeakCollection`1.ToList">
       <summary>Gets a list containing strong references to the items in this collection.</summary>
@@ -1293,17 +1444,14 @@
     <member name="M:Microsoft.VisualStudio.Settings.IAsyncStringStorage.GetAllSinceVersionAsync(System.Int32)">
       <summary />
       <param name="modifiedAfterRevision" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Settings.IAsyncStringStorage.GetAsync(System.String)">
       <summary />
       <param name="name" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Settings.IAsyncStringStorage.SetAsync(Microsoft.VisualStudio.Settings.NamedVersionedString)">
       <summary />
       <param name="value" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Settings.IdleStateChangedEventArgs.#ctor(System.Boolean)">
       <summary>Initializes a new instance of the event args.</summary>
@@ -1319,7 +1467,6 @@
       <param name="logger" />
       <typeparam name="T" />
       <typeparam name="U" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Settings.ISettingNameTranslator.GetPrivateNameFromSharedName(System.String)">
       <summary>Gets the private name.</summary>
@@ -1410,9 +1557,32 @@
       <param name="settingName">The name of the setting to test.</param>
       <returns>False if the setting is private, else true.</returns>
     </member>
-    <member name="M:Microsoft.VisualStudio.Settings.ISettingsManagerHost.RetrieveHubService">
-      <summary>Provides the hub service for the settings manager to communicate with the VS hub for sharing and roaming settings.</summary>
-      <returns>An object of type <see cref="T:Microsoft.VisualStudio.Shell.VsHub.IVsHubService" />.</returns>
+    <member name="M:Microsoft.VisualStudio.Settings.ISettingsService.DeleteAllSettingsAsync(System.Guid)">
+      <summary />
+      <param name="clientId" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ISettingsService.DeleteSettingAsync(System.String,System.Guid)">
+      <summary />
+      <param name="settingName" />
+      <param name="clientId" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ISettingsService.GetMultipleSettingsAsync(System.Int32)">
+      <summary />
+      <param name="modifiedAfter" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ISettingsService.GetSettingAsync(System.String)">
+      <summary />
+      <param name="settingName" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ISettingsService.InitAsync(System.String,System.String)">
+      <summary />
+      <param name="collectionName" />
+      <param name="telemetrySettings" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ISettingsService.PutSettingAsync(System.String,Microsoft.VisualStudio.Settings.ServiceUploadParameters)">
+      <summary />
+      <param name="settingName" />
+      <param name="settingInfo" />
     </member>
     <member name="M:Microsoft.VisualStudio.Settings.IStringStorage.ClearAsync">
       <summary>Deletes all stored values.</summary>
@@ -1452,7 +1622,6 @@
       <param name="logger" />
       <typeparam name="T" />
       <typeparam name="U" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Settings.ListMerger.ThreeWayMerge``2(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IReadOnlyList{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IReadOnlyList{System.Collections.Generic.KeyValuePair{``0,``1}},System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IEqualityComparer{``1},Microsoft.VisualStudio.Settings.Telemetry.ISettingsLogger)">
       <summary />
@@ -1464,7 +1633,6 @@
       <param name="logger" />
       <typeparam name="T" />
       <typeparam name="U" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Settings.NamedVersionedString.#ctor(System.String,System.String,System.Boolean,System.Int32)">
       <summary>Initializes a new instance of NamedVersionedString.</summary>
@@ -1473,15 +1641,66 @@
       <param name="machineLocal">True if the setting is machine-local, otherwise false.</param>
       <param name="revision">The revision number.</param>
     </member>
-    <member name="M:Microsoft.VisualStudio.Settings.SetAsyncResult.#ctor(Microsoft.VisualStudio.Settings.SetAsyncResultCode,System.Int32)">
+    <member name="M:Microsoft.VisualStudio.Settings.SerializedSetting.#ctor(System.String,System.String,System.Int32,System.Boolean)">
       <summary />
-      <param name="resultCode" />
+      <param name="name" />
+      <param name="value" />
+      <param name="revision" />
+      <param name="isMachineLocal" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.SerializedSetting.Equals(System.Object)">
+      <summary />
+      <param name="obj" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.SerializedSetting.GetHashCode">
+      <summary />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.SerializedSetting.op_Equality(Microsoft.VisualStudio.Settings.SerializedSetting,Microsoft.VisualStudio.Settings.SerializedSetting)">
+      <summary />
+      <param name="first" />
+      <param name="second" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.SerializedSetting.op_Inequality(Microsoft.VisualStudio.Settings.SerializedSetting,Microsoft.VisualStudio.Settings.SerializedSetting)">
+      <summary />
+      <param name="first" />
+      <param name="second" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ServiceUploadParameters.#ctor(System.Int32,System.Boolean,System.String,System.Guid)">
+      <summary />
+      <param name="revision" />
+      <param name="machineLocal" />
+      <param name="value" />
+      <param name="clientId" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ServiceUploadResult.#ctor(System.Int32)">
+      <summary />
       <param name="newRevision" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ServiceUploadResult.Equals(System.Object)">
+      <summary />
+      <param name="obj" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ServiceUploadResult.GetHashCode">
+      <summary />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ServiceUploadResult.op_Equality(Microsoft.VisualStudio.Settings.ServiceUploadResult,Microsoft.VisualStudio.Settings.ServiceUploadResult)">
+      <summary />
+      <param name="first" />
+      <param name="second" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.ServiceUploadResult.op_Inequality(Microsoft.VisualStudio.Settings.ServiceUploadResult,Microsoft.VisualStudio.Settings.ServiceUploadResult)">
+      <summary />
+      <param name="first" />
+      <param name="second" />
     </member>
     <member name="M:Microsoft.VisualStudio.Settings.SettingNameTooLongException.#ctor(System.Int32,System.Int32)">
       <summary />
       <param name="actualSize" />
       <param name="maxSize" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Settings.SettingsEventArgs.#ctor(Microsoft.VisualStudio.Settings.SettingsEvent)">
+      <summary />
+      <param name="settingsEvent" />
     </member>
     <member name="M:Microsoft.VisualStudio.Settings.SettingsListChangedEventArgs.Adding(System.Collections.Generic.KeyValuePair{System.String,System.Object},System.Object)">
       <summary>Returns a SettingsListChangedEventArgs that describes the addition of a single item to a list.</summary>
@@ -1568,21 +1787,21 @@
       <summary>Strips non-escaped accelerator markers ('&amp;amp;') from the given string using the same algorithm used by MsoPwchStripWtz (bugs and all), to wit:Strip odd '&amp;amp;' chars from the string.  As per DrawText, consecutive pairs of '&amp;amp;'s will leave a real '&amp;amp;' character, and all odd '&amp;amp;'s are removed even though only the last may be underlined.If an '&amp;amp;' occurs inside of parentheses then the parentheses and the character following the '&amp;amp;' are also stripped out. This is useful to remove accelerator strings of format (&amp;amp;N) which are appended to label in some FE language versions.NOTE: We do not check for language to do this i.e. we assume that there isn't any realistic label in other languages with (&amp;amp;N) stuck in.</summary>
       <param name="input">String to strip.</param>
       <returns>
-        <paramref name="input" /> stripped of accelerators.</returns>
+          <paramref name="input" /> stripped of accelerators.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.Accelerator.StripAccelerators(System.String,System.Char)">
       <summary>Strips non-escaped accelerator markers from the given string using the same algorithm used by MsoPwchStripWtz (bugs and all), to wit:Strip odd chars that match <paramref name="accessSpecifier" />  from the string. As per DrawText, consecutive pairs of characters matching <paramref name="accessSpecifier" /> will leave a single character matching <paramref name="accessSpecifier" />, and all odd characters matching <paramref name="accessSpecifier" /> are removed even though only the last may be underlined.If a character matching <paramref name="accessSpecifier" /> occurs inside of parentheses then the parentheses and the character following the <paramref name="accessSpecifier" /> matching character are also stripped out. This is useful to remove accelerator strings of format (%accessSpecifier%N) which are appended to label in some FE language versions.NOTE: We do not check for language to do this i.e. we assume that there isn't any realistic label in other languages with (%accessSpecifier%N) stuck in.</summary>
       <param name="input">String to strip.</param>
       <param name="accessSpecifier">Specifies the character to treat as an access key specifier.</param>
       <returns>
-        <paramref name="input" /> stripped of accelerators.</returns>
+          <paramref name="input" /> stripped of accelerators.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.Accelerator.StripAccelerators(System.String,System.Object)">
       <summary>Returns the <paramref name="input" /> string with the specified access key specifier stripped.</summary>
       <param name="input">String to strip of access key specifiers.</param>
       <param name="accessKeySpecifier">Character to strip.</param>
       <returns>
-        <paramref name="input" /> stripped of accelerators.</returns>
+          <paramref name="input" /> stripped of accelerators.</returns>
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.BitRotator.RotateLeft(System.Byte,System.Int32)">
       <summary>Rotates the bits of an unsigned byte value to the left.</summary>
@@ -2058,6 +2277,34 @@
       <summary>Gets an enumerator for keys in storage.</summary>
       <returns>The enumerator.</returns>
     </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.FontColorCategory.#ctor(System.Guid)">
+      <summary />
+      <param name="categoryGuid" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.FontColorEntry.#ctor(System.String)">
+      <summary />
+      <param name="name" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.FontColorTheme.#ctor">
+      <summary />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.FontColorTheme.#ctor(Microsoft.VisualStudio.Utilities.VersionedBinaryReader)">
+      <summary />
+      <param name="reader" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.FontColorTheme.AddCategory(Microsoft.VisualStudio.Utilities.FontColorCategory)">
+      <summary />
+      <param name="category" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.FontColorTheme.GetCategory(System.Guid)">
+      <summary />
+      <param name="categoryGuid" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.FontColorTheme.WriteToStream(Microsoft.VisualStudio.Utilities.VersionedBinaryWriter,System.Boolean)">
+      <summary />
+      <param name="writer" />
+      <param name="includeFontInformation" />
+    </member>
     <member name="M:Microsoft.VisualStudio.Utilities.GZip.Compress(System.Byte[])">
       <summary>Compresses a byte array using the GZip algorithm.</summary>
       <param name="data">The array to compress.</param>
@@ -2305,6 +2552,13 @@
       <param name="message">The message.</param>
       <param name="args">The set of arguments.</param>
     </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.OnDisposeActionDisposable.#ctor(System.Action)">
+      <summary />
+      <param name="onDispose" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.OnDisposeActionDisposable.Dispose">
+      <summary />
+    </member>
     <member name="M:Microsoft.VisualStudio.Utilities.OneOrMany`1.Add(`0)">
       <summary>Adds a new value to the collection.</summary>
       <param name="value">The value to add.</param>
@@ -2328,45 +2582,36 @@
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.EnterReadLock">
       <summary />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.EnterUpgradeableReadLock">
       <summary />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.EnterWriteLock">
       <summary />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.TryEnterReadLock(System.Int32)">
       <summary />
       <param name="millisecondsTimeout" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.TryEnterReadLock(System.TimeSpan)">
       <summary />
       <param name="timeout" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.TryEnterUpgradeableReadLock(System.Int32)">
       <summary />
       <param name="millisecondsTimeout" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.TryEnterUpgradeableReadLock(System.TimeSpan)">
       <summary />
       <param name="timeout" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.TryEnterWriteLock(System.Int32)">
       <summary />
       <param name="millisecondsTimeout" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.TryEnterWriteLock(System.TimeSpan)">
       <summary />
       <param name="timeout" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.ReusableArray`1.#ctor(System.Boolean,System.Int32)">
       <summary>Creates a new reusable array.</summary>
@@ -2470,7 +2715,6 @@
     <member name="M:Microsoft.VisualStudio.Utilities.SerializationExtensions.ReadGuid(System.IO.BinaryReader)">
       <summary />
       <param name="reader" />
-      <returns />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.SerializationExtensions.ReadInt16Size(System.IO.BinaryReader)">
       <summary>Reads a Int16Size struct from <paramref name="reader" />.</summary>
@@ -2526,6 +2770,10 @@
       <summary>Reads a ulong? from <paramref name="reader" />.</summary>
       <param name="reader">The reader.</param>
       <returns>The nullable unsigned long.</returns>
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.SerializationExtensions.ReadUTF8String(System.IO.BinaryReader)">
+      <summary />
+      <param name="reader" />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.SerializationExtensions.ReadWindowsSize(System.IO.BinaryReader)">
       <summary>Reads a <see cref="T:System.Windows.Size" /> struct from <paramref name="reader" />.</summary>
@@ -2602,6 +2850,21 @@
       <param name="writer">The writer.</param>
       <param name="size" />
     </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.SerializationExtensions.WriteUTF8String(System.IO.BinaryWriter,System.String)">
+      <summary />
+      <param name="writer" />
+      <param name="value" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.SimpleDynamicMemberAccessor.#ctor">
+      <summary />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.SimpleDynamicMemberAccessor.TryGetProperty``1(System.Object,System.String,``0@)">
+      <summary />
+      <param name="instance" />
+      <param name="propertyName" />
+      <param name="propertyValue" />
+      <typeparam name="T" />
+    </member>
     <member name="M:Microsoft.VisualStudio.Utilities.StreamAccessException.#ctor(System.Object)">
       <summary>Initializes a new instance of StreamAccessException with the specified key.</summary>
       <param name="key" />
@@ -2666,6 +2929,25 @@
       <summary />
       <param name="maxStreamCount" />
       <param name="maxStorageSize" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.TracedEvent.#ctor">
+      <summary />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.TracedEvent.Attach(System.Action)">
+      <summary />
+      <param name="handler" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.TracedEvent.AttachIfNotFired(System.Action,System.Boolean)">
+      <summary />
+      <param name="handler" />
+      <param name="invokeIfFired" />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.TracedEvent.Fire">
+      <summary />
+    </member>
+    <member name="M:Microsoft.VisualStudio.Utilities.TracedEvent.Remove(System.Action)">
+      <summary />
+      <param name="handler" />
     </member>
     <member name="M:Microsoft.VisualStudio.Utilities.Tracer.#ctor(System.String)">
       <summary>Initializes a new instance of Tracer with the specified name.</summary>
@@ -2830,6 +3112,30 @@
       <param name="version">The version number to write.</param>
       <param name="callback">The delegate that will write the body of the stream.</param>
     </member>
+    <member name="P:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity.ActivityId">
+      <summary />
+    </member>
+    <member name="P:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity.Name">
+      <summary />
+    </member>
+    <member name="P:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity.RelatedActivityId">
+      <summary />
+    </member>
+    <member name="P:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo.ActivityId">
+      <summary />
+    </member>
+    <member name="P:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo.ActivityKeyword">
+      <summary />
+    </member>
+    <member name="P:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo.ActivityLevel">
+      <summary />
+    </member>
+    <member name="P:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo.ActivityName">
+      <summary />
+    </member>
+    <member name="P:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo.RelatedActivityId">
+      <summary />
+    </member>
     <member name="P:Microsoft.VisualStudio.FeatureFlags.FeatureFlag.IsEnabled">
       <summary>Determines whether the feature should be enabled.</summary>
       <returns>True if the feature is enabled, otherwise false.</returns>
@@ -2840,7 +3146,8 @@
     </member>
     <member name="P:Microsoft.VisualStudio.PlatformUI.DisposableObject.IsDisposed">
       <summary>Returns whether the object has been disposed once, which protects against double disposal.</summary>
-      <returns>true if the object has already been disposed.</returns>
+      <returns>
+          <see langword="true" /> if the object has already been disposed.</returns>
     </member>
     <member name="P:Microsoft.VisualStudio.Settings.IdleStateChangedEventArgs.IsIdle">
       <summary>Determines whether or not the setting store state is idle.</summary>
@@ -2854,6 +3161,9 @@
       <summary>Optional task indicating the host is finished starting. The settings manager will defer resource-intensive tasks until after this task completes.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.</returns>
     </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ISettingsManagerHost.CollectionName">
+      <summary />
+    </member>
     <member name="P:Microsoft.VisualStudio.Settings.ISettingsManagerHost.Logger">
       <summary>Gets a logger for error telemetry.</summary>
       <returns>The logger.</returns>
@@ -2866,25 +3176,60 @@
       <summary>Gets the backing store for private settings.</summary>
       <returns>The storage object.</returns>
     </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ISettingsManagerHost.TelemetrySettings">
+      <summary />
+    </member>
     <member name="P:Microsoft.VisualStudio.Settings.NamedVersionedString.Name">
       <summary>Gets the name of the string.</summary>
       <returns>The name.</returns>
     </member>
-    <member name="P:Microsoft.VisualStudio.Settings.SetAsyncResult.NewRevision">
+    <member name="P:Microsoft.VisualStudio.Settings.SerializedSetting.IsMachineLocal">
       <summary />
-      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
-    <member name="P:Microsoft.VisualStudio.Settings.SetAsyncResult.ResultCode">
+    <member name="P:Microsoft.VisualStudio.Settings.SerializedSetting.Name">
       <summary />
-      <returns>Returns <see cref="T:Microsoft.VisualStudio.Settings.SetAsyncResultCode" />.</returns>
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.SerializedSetting.Revision">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.SerializedSetting.Value">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ServiceUploadParameters.ClientId">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ServiceUploadParameters.MachineLocal">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ServiceUploadParameters.Revision">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ServiceUploadParameters.Value">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ServiceUploadResult.Conflict">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ServiceUploadResult.Kind">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ServiceUploadResult.NewRevision">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ServiceUploadResult.ParseError">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.ServiceUploadResult.UnknownError">
+      <summary />
     </member>
     <member name="P:Microsoft.VisualStudio.Settings.SettingNameTooLongException.ActualSize">
       <summary />
-      <returns />
     </member>
     <member name="P:Microsoft.VisualStudio.Settings.SettingNameTooLongException.MaximumSize">
       <summary />
-      <returns />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Settings.SettingsEventArgs.Event">
+      <summary />
     </member>
     <member name="P:Microsoft.VisualStudio.Settings.SettingsListChangedEventArgs.ItemAdded">
       <summary>Gets the item that was added.</summary>
@@ -2953,6 +3298,15 @@
     <member name="P:Microsoft.VisualStudio.Settings.VersionedString.Revision">
       <summary>Gets the revision number.</summary>
       <returns>The revision number.</returns>
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.ColorEntry.IsColorValid">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.ColorEntry.Type">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.ColorEntry.Value">
+      <summary />
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.Dpi.DpiHelper.BitmapScalingMode">
       <summary>The BitmapScalingMode.</summary>
@@ -3032,7 +3386,6 @@
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.FileStreamStorage`1.EnableRaisingEvents">
       <summary />
-      <returns />
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.FileStreamStorage`1.Item(`0)">
       <summary>Open an existing stream in storage for reading.</summary>
@@ -3046,6 +3399,66 @@
     <member name="P:Microsoft.VisualStudio.Utilities.FileStreamStorage`1.StoragePath">
       <summary>Gets or sets the directory that will contain the stored files.</summary>
       <returns>The directory that will contain the stored files.</returns>
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorCategory.CategoryGuid">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorCategory.Colors">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorCategory.Font">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.AutoBackgroundColor">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.AutoForegroundColor">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.BackgroundColor">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.DescriptionResource">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.FontColorItemFlags">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.FontFlags">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.ForegroundColor">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.LineStyle">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.LocalizedNameResource">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.MarkerStyle">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.MergePriority">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorEntry.Name">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontColorTheme.Categories">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontInformation.CharSet">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontInformation.IsValid">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontInformation.PointSize">
+      <summary />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.FontInformation.Typeface">
+      <summary />
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.Int16Size.Area">
       <summary>Gets the area of the Int16Size.</summary>
@@ -3083,7 +3496,6 @@
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.IStreamStorageEvents`1.EnableRaisingEvents">
       <summary />
-      <returns />
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.ITracer.IndentLevel">
       <summary>Gets the indentation level of the tracer.</summary>
@@ -3113,7 +3525,6 @@
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.ReaderWriterLockSlimWrapper.InnerLock">
       <summary />
-      <returns />
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.ReusableResourceHolder`1.Resource">
       <summary>Gets the resource stored by this resource holder. After this object is disposed, returns null.</summary>
@@ -3125,7 +3536,9 @@
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.StreamStorageMonitor`1.EnableMonitoring">
       <summary />
-      <returns />
+    </member>
+    <member name="P:Microsoft.VisualStudio.Utilities.TracedEvent.HasFired">
+      <summary />
     </member>
     <member name="P:Microsoft.VisualStudio.Utilities.Tracer.IndentLevel">
       <summary>Gets the indentation level of the tracer.</summary>
@@ -3138,6 +3551,63 @@
     <member name="P:Microsoft.VisualStudio.Utilities.Tracer.Source">
       <summary>Gets or sets the TraceSource for the tracer.</summary>
       <returns>The source.</returns>
+    </member>
+    <member name="T:Microsoft.Internal.VisualStudio.Diagnostics.IVsEtwActivityEventWriter">
+      <summary />
+    </member>
+    <member name="T:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivity">
+      <summary />
+    </member>
+    <member name="T:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwActivityInfo">
+      <summary />
+    </member>
+    <member name="T:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords.Core">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords.Ide">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords.Solution">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords.Diagnostics">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords.WebTools">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords.TelemetryEvents">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwKeywords.Reserved">
+      <summary />
+    </member>
+    <member name="T:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel.Default">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel.Critical">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel.Performance">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel.ErrorAssert">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel.Information">
+      <summary />
+    </member>
+    <member name="F:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLevel.Verbose">
+      <summary />
+    </member>
+    <member name="T:Microsoft.Internal.VisualStudio.Diagnostics.VsEtwLogging">
+      <summary />
     </member>
     <member name="T:Microsoft.VisualStudio.FeatureFlags.FeatureFlag">
       <summary>A feature flag that consists of a name and the enabled state.</summary>
@@ -3165,6 +3635,9 @@
     </member>
     <member name="T:Microsoft.VisualStudio.PlatformUI.DisposableObject">
       <summary>Microsoft internal use only.</summary>
+    </member>
+    <member name="T:Microsoft.VisualStudio.PlatformUI.DisposableWrapper">
+      <summary />
     </member>
     <member name="T:Microsoft.VisualStudio.PlatformUI.ExtensionMethods">
       <summary>Microsoft internal use only.</summary>
@@ -3377,6 +3850,9 @@
     <member name="T:Microsoft.VisualStudio.Settings.ISettingsManagerHost">
       <summary>Functionality provided by the application that creates an <see cref="T:Microsoft.VisualStudio.Settings.ISettingsManager" /> viaSettingsManagerFactory.CreateInstance.</summary>
     </member>
+    <member name="T:Microsoft.VisualStudio.Settings.ISettingsService">
+      <summary />
+    </member>
     <member name="T:Microsoft.VisualStudio.Settings.ISettingsSubset">
       <summary>A subset of settings (either a single setting or all settings matching a wildcard pattern) for which one can subscribe to change events.</summary>
     </member>
@@ -3386,8 +3862,21 @@
     <member name="T:Microsoft.VisualStudio.Settings.ListMerger">
       <summary>Handles merging operations for setting collections.</summary>
     </member>
+    <member name="T:Microsoft.VisualStudio.Settings.LockedStorageCreatorDelegate">
+      <summary />
+      <param name="path" />
+      <param name="writable" />
+      <param name="logger" />
+      <param name="storageLock" />
+    </member>
     <member name="T:Microsoft.VisualStudio.Settings.NamedVersionedString">
       <summary>A setting value serialized as a string along with an associated name, version, and machine-local flag.</summary>
+    </member>
+    <member name="T:Microsoft.VisualStudio.Settings.NonLockedStorageCreatorDelegate">
+      <summary />
+      <param name="path" />
+      <param name="writable" />
+      <param name="logger" />
     </member>
     <member name="T:Microsoft.VisualStudio.Settings.PropertyChangedAsyncEventHandler">
       <summary>n event handler similar to <see cref="T:System.ComponentModel.PropertyChangedHandler" /> that returns a <see cref="T:System.Threading.Tasks.Task" /> so the handler can be asynchronous.</summary>
@@ -3395,25 +3884,58 @@
       <param name="args">The event.</param>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.</returns>
     </member>
-    <member name="T:Microsoft.VisualStudio.Settings.SetAsyncResult">
+    <member name="T:Microsoft.VisualStudio.Settings.SerializedSetting">
       <summary />
     </member>
-    <member name="T:Microsoft.VisualStudio.Settings.SetAsyncResultCode">
+    <member name="T:Microsoft.VisualStudio.Settings.ServiceHubPubSubTopic">
       <summary />
     </member>
-    <member name="F:Microsoft.VisualStudio.Settings.SetAsyncResultCode.None">
+    <member name="T:Microsoft.VisualStudio.Settings.ServiceUploadParameters">
       <summary />
     </member>
-    <member name="F:Microsoft.VisualStudio.Settings.SetAsyncResultCode.Success">
+    <member name="T:Microsoft.VisualStudio.Settings.ServiceUploadResult">
       <summary />
     </member>
-    <member name="F:Microsoft.VisualStudio.Settings.SetAsyncResultCode.Conflict">
+    <member name="T:Microsoft.VisualStudio.Settings.ServiceUploadResultKind">
       <summary />
     </member>
-    <member name="F:Microsoft.VisualStudio.Settings.SetAsyncResultCode.Unknown">
+    <member name="F:Microsoft.VisualStudio.Settings.ServiceUploadResultKind.Success">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.ServiceUploadResultKind.Conflict">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.ServiceUploadResultKind.ParseError">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.ServiceUploadResultKind.Unknown">
       <summary />
     </member>
     <member name="T:Microsoft.VisualStudio.Settings.SettingNameTooLongException">
+      <summary />
+    </member>
+    <member name="T:Microsoft.VisualStudio.Settings.SettingsEvent">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.SettingsEvent.None">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.SettingsEvent.SyncWithServerAndClientsEnded">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.SettingsEvent.ProcessSignInStateChangeEnded">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.SettingsEvent.SyncWithSharedStoreEnded">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.SettingsEvent.UploadsComplete">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Settings.SettingsEvent.AllPendingUploadsCompletedOrFailed">
+      <summary />
+    </member>
+    <member name="T:Microsoft.VisualStudio.Settings.SettingsEventArgs">
       <summary />
     </member>
     <member name="T:Microsoft.VisualStudio.Settings.SettingsListChangedEventArgs">
@@ -3598,12 +4120,72 @@
     <member name="T:Microsoft.VisualStudio.Utilities.BitRotator">
       <summary>Provides helper methods for rotating bits right or left.</summary>
     </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.ColorEntry">
+      <summary />
+    </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.ColorEntry.ColorType">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.ColorEntry.ColorType.Invalid">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.ColorEntry.ColorType.Raw">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.ColorEntry.ColorType.ColorIndex">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.ColorEntry.ColorType.SystemColor">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.ColorEntry.ColorType.AppSpecificColor">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.ColorEntry.ColorType.Automatic">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.ColorEntry.ColorType.TrackForeground">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.ColorEntry.ColorType.TrackBackground">
+      <summary />
+    </member>
     <member name="T:Microsoft.VisualStudio.Utilities.Dpi.DpiHelper">
       <summary>A helper class for scaling coordinates and images according to current DPI scaling set in Windows for the screen. </summary>
     </member>
     <member name="T:Microsoft.VisualStudio.Utilities.FileStreamStorage`1">
       <summary>A generic implementation of stream storage in the file system. Stores files in a directory. The files it recognizes and accepts for creation can be all files in the directory or only files with a specific extension.</summary>
       <typeparam name="TKey">The type of the stream key.</typeparam>
+    </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.FontColorCategory">
+      <summary />
+    </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.FontColorEntry">
+      <summary />
+    </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.FontColorEntry.LineStyles">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.FontColorEntry.LineStyles.None">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.FontColorEntry.LineStyles.Solid">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.FontColorEntry.LineStyles.Squiggly">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.FontColorEntry.LineStyles.Hatch">
+      <summary />
+    </member>
+    <member name="F:Microsoft.VisualStudio.Utilities.FontColorEntry.LineStyles.Dotted">
+      <summary />
+    </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.FontColorTheme">
+      <summary />
+    </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.FontInformation">
+      <summary />
     </member>
     <member name="T:Microsoft.VisualStudio.Utilities.GZip">
       <summary>Provides methods for compressing/decompressing a byte array using the GZip algorithm.</summary>
@@ -3629,6 +4211,9 @@
     </member>
     <member name="T:Microsoft.VisualStudio.Utilities.ITracer">
       <summary>Provides an event tracer.</summary>
+    </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.OnDisposeActionDisposable">
+      <summary />
     </member>
     <member name="T:Microsoft.VisualStudio.Utilities.OneOrMany`1">
       <summary>A collection of <paramref name="T" /> that is optimized for minimal space in the case of a single element.</summary>
@@ -3670,6 +4255,9 @@
     <member name="T:Microsoft.VisualStudio.Utilities.SerializationExtensions">
       <summary>Provides a set of extension methods for serialization.</summary>
     </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.SimpleDynamicMemberAccessor">
+      <summary />
+    </member>
     <member name="T:Microsoft.VisualStudio.Utilities.StreamAccess">
       <summary>Specifies the type of access.</summary>
     </member>
@@ -3706,6 +4294,9 @@
     </member>
     <member name="F:Microsoft.VisualStudio.Utilities.TimestampKind.LastWrite">
       <summary>Describes a timestamp the represents the last write time of an object.</summary>
+    </member>
+    <member name="T:Microsoft.VisualStudio.Utilities.TracedEvent">
+      <summary />
     </member>
     <member name="T:Microsoft.VisualStudio.Utilities.Tracer">
       <summary>Traces different kinds of events.</summary>

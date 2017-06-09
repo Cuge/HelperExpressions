@@ -3,8 +3,7 @@
 #><#@ import namespace="System.Collections.Generic"
 #><#@ import namespace="System.IO"
 #><#@ import namespace="System.Text"
-#><#@ import namespace="Microsoft.VisualStudio.TextTemplating"
-#>
+#><#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
 
 <#+
 
@@ -31,7 +30,7 @@
         private StringBuilder template;
         public String OutputPath { get; set; }
 
-        public T4BlockManager(ITextTemplatingEngineHost host, StringBuilder template, bool commonHeader)
+        public T4BlockManagerNew(ITextTemplatingEngineHost host, StringBuilder template, bool commonHeader)
         {
             this.host = host;
             this.template = template;

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "96e667518a5ab7b53bc3cfeead923d2b70c48013"
+    "signature": "29ecc9dab8e9a8386698d5decc86f842f5959095"
   },
   "compilationOptions": {},
   "targets": {
@@ -404,6 +404,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "unofficial.microsoft.visualstudio.texttemplating/14.0.0": {},
       "helperexpressions/1.0.0": {
         "runtime": {
           "HelperExpressions.dll": {}
@@ -414,7 +415,8 @@
           "HelperExpressions": "1.0.0",
           "MSTest.TestAdapter": "1.1.18",
           "MSTest.TestFramework": "1.1.18",
-          "Microsoft.NET.Test.Sdk": "15.0.0"
+          "Microsoft.NET.Test.Sdk": "15.0.0",
+          "Unofficial.Microsoft.VisualStudio.TextTemplating": "14.0.0"
         },
         "runtime": {
           "HelperExpressionsTest.dll": {}
@@ -602,6 +604,13 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "unofficial.microsoft.visualstudio.texttemplating/14.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oLfVlAUp09BHE2tMtnYsYnSRRY8dvbnuv99+ysHY1As340SUhC0/WMgnlJK+4I9qKuCbTbL+jmTQb13XoCvdcQ==",
+      "path": "unofficial.microsoft.visualstudio.texttemplating/14.0.0",
+      "hashPath": "unofficial.microsoft.visualstudio.texttemplating.14.0.0.nupkg.sha512"
     },
     "helperexpressions/1.0.0": {
       "type": "project",

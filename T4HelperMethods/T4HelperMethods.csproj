@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>T4HelperMethods</RootNamespace>
     <AssemblyName>T4HelperMethods</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr4.StringTemplate, Version=4.0.7.0, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\StringTemplate4.4.0.8\lib\net35-client\Antlr4.StringTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr4.StringTemplate.Visualizer, Version=4.0.7.0, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\StringTemplate4.Visualizer.4.0.8\lib\net35-client\Antlr4.StringTemplate.Visualizer.dll</HintPath>
+    </Reference>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\packages\EnvDTE.8.0.1\lib\net10\EnvDTE.dll</HintPath>
@@ -132,21 +142,25 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeAutomationHelper.cs" />
-    <Compile Include="EnvHelperMethods.cs" />
+    <None Include="CodeAutomationHelper.ttinclude" />
+    <None Include="EnvHelperMethods.ttinclude" />
+    <Compile Include="ModelClasses\DomainClassInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="T4FileManager.cs" />
+    <None Include="T4FileManager.ttinclude" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="PartialClasses\Additional.st" />
     <None Include="PartialClasses\BlockManager.ttinclude" />
     <None Include="packages.config" />
-    <Compile Include="PartialClasses\Additional.cs.Include" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PartialClasses\TextTemplate.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>TextTemplate.txt</LastGenOutput>
+      <FormatOutput>True</FormatOutput>
+      <Parameters>&lt;%3fxml version="1.0" encoding="utf-16"%3f&gt;
+&lt;ArrayOfParameterStorage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Parameters>
     </None>
   </ItemGroup>
   <ItemGroup>

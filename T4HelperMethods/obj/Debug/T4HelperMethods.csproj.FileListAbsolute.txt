@@ -33,7 +33,6 @@ E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\VsWebSite.Interop.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\VSLangProj.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\VsWebSite.Interop90.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Microsoft.VisualStudio.Designer.Interfaces.dll
-E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Newtonsoft.Json.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Microsoft.Build.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Microsoft.Build.Framework.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Microsoft.Build.Conversion.Core.dll
@@ -91,5 +90,12 @@ E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\zh-Hans\Microsoft.VisualSt
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\zh-Hant\Microsoft.VisualStudio.Threading.resources.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\obj\Debug\T4HelperMethods.dll
 E:\GitHub\HelperExpressions\T4HelperMethods\obj\Debug\T4HelperMethods.pdb
-E:\GitHub\HelperExpressions\T4HelperMethods\obj\Debug\T4HelperMethods.csprojResolveAssemblyReference.cache
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\stdole.dll
+E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Antlr3.Runtime.dll
+E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Antlr4.StringTemplate.dll
+E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Antlr4.StringTemplate.Visualizer.dll
+E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\System.Collections.Immutable.dll
+E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\System.Threading.Tasks.Dataflow.dll
+E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Antlr3.Runtime.xml
+E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Antlr4.StringTemplate.xml
+E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Antlr4.StringTemplate.Visualizer.xml

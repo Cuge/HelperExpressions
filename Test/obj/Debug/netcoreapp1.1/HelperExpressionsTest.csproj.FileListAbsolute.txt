@@ -12,3 +12,10 @@ E:\GitHub\HelperExpressions\Test\obj\Debug\netcoreapp1.1\HelperExpressionsTest.c
 E:\GitHub\HelperExpressions\Test\obj\Debug\netcoreapp1.1\HelperExpressionsTest.AssemblyInfo.cs
 E:\GitHub\HelperExpressions\Test\obj\Debug\netcoreapp1.1\HelperExpressionsTest.dll
 E:\GitHub\HelperExpressions\Test\obj\Debug\netcoreapp1.1\HelperExpressionsTest.pdb
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\T4HelperMethods.dll
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\Antlr4.StringTemplate.dll
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\Antlr3.Runtime.dll
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\T4HelperMethods.pdb
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\T4HelperMethods.dll.config
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\Antlr4.StringTemplate.xml
+E:\GitHub\HelperExpressions\Test\bin\Debug\netcoreapp1.1\Antlr3.Runtime.xml

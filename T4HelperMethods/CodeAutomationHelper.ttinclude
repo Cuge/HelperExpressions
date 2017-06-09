@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TextTemplating;
+﻿<#@ assembly name="System.Core" #>
+<#@ assembly name="EnvDTE" #>  
+<#@ assembly name="EnvDTE80" #>  
 
-namespace T4HelperMethods
-{
+<#@ import namespace="EnvDTE" #>  
+<#@ import namespace="System.IO" #>  
+<#@ import namespace="System.Linq" #> 
+<#@ import namespace="System.Text" #> 
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.CodeDom.Compiler" #> 
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #> 
+
+<#+
 
     // create an instance of the AutomationHelper class so 
     // that it is accessible from everywhere within the template
@@ -22,7 +25,7 @@ namespace T4HelperMethods
         /// <summary>
         /// Creates a new instance of this class
         /// </summary>
-        public AutomationHelper(object host)
+        public AutomationHelper(ITextTemplatingEngineHost host)
         {
             // store a reference to the template host
             // we will need this frequently
@@ -117,6 +120,17 @@ namespace T4HelperMethods
             }
             return ret;
         }
+        public IEnumerable<EnvDTE.Project> GetAllChildrenProjects(EnvDTE.Project project)
+        {
+
+            var ret = new List<EnvDTE.Project>();
+            if (project != null)
+            {
+                ret.Add(project);
+                ret.AddRange(GetAllChildrenProjects(project.ProjectItems));
+            }
+            return ret;
+        }
 
         public IEnumerable<EnvDTE.Project> GetAllChildrenProjects(EnvDTE.ProjectItems projectItems)
         {
@@ -130,8 +144,10 @@ namespace T4HelperMethods
                     if (proj != null)
                     {
                         ret.Add(proj);
+                        ret.AddRange(GetAllChildrenProjects(projectItem.SubProject));
                     }
                     ret.AddRange(GetAllChildrenProjects(projectItem.ProjectItems));
+                    ret.AddRange(GetAllChildrenProjects(projectItem.Collection));
                 }
             }
             return ret;
@@ -332,9 +348,9 @@ namespace T4HelperMethods
             return GetAllCodeElementsOfType(codeClass.Members, EnvDTE.vsCMElement.vsCMElementFunction, true).OfType<EnvDTE.CodeFunction>();
         }
 
-        public IEnumerable<EnvDTE.CodeFunction> GetProperties(EnvDTE.CodeClass codeClass)
+        public IEnumerable<EnvDTE.CodeProperty> GetProperties(EnvDTE.CodeClass codeClass)
         {
-            return GetAllCodeElementsOfType(codeClass.Members, EnvDTE.vsCMElement.vsCMElementProperty, true).OfType<EnvDTE.CodeFunction>();
+            return GetAllCodeElementsOfType(codeClass.Members, EnvDTE.vsCMElement.vsCMElementProperty, true).OfType<EnvDTE.CodeProperty>();
         }
 
 
@@ -490,4 +506,4 @@ namespace T4HelperMethods
         public const string VisualJSharp = "{E6FDF86B-F3D1-11D4-8576-0002A516ECE8}";
         public const string WebProject = "{E24C65DC-7377-472b-9ABA-BC803B73C61A}";
     }
-}
+#>

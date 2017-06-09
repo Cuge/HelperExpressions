@@ -1,14 +1,16 @@
-﻿using Microsoft.VisualStudio.TextTemplating;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿<#@ assembly name="System.Core" #>
+<#@ assembly name="EnvDTE" #>  
+<#@ import namespace="EnvDTE" #>  
+<#@ import namespace="System.IO" #>  
+<#@ import namespace="System.Linq" #> 
+<#@ import namespace="System.Text" #> 
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.CodeDom.Compiler" #> 
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #> 
 
-namespace T4HelperMethods
-{
 
+
+<#+
     // T4 Template Block manager for handling multiple file outputs more easily.
     // Copyright (c) Microsoft Corporation.  All rights reserved.
     // This source code is made available under the terms of the Microsoft Public License (MS-PL)
@@ -152,4 +154,5 @@ class VSManagementStrategy : ManagementStrategy
             }
         }
     }
-}
+
+#>

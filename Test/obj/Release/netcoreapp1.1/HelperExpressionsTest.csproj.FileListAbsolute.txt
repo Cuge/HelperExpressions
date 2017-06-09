@@ -7,12 +7,7 @@ E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\HelperExpressionsTest
 E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\HelperExpressionsTest.dll
 E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\HelperExpressionsTest.pdb
 E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\HelperExpressions.dll
-E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\T4HelperMethods.dll
-E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.dll
 E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\HelperExpressions.pdb
-E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\T4HelperMethods.pdb
-E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\T4HelperMethods.dll.config
-E:\GitHub\HelperExpressions\Test\bin\Release\netcoreapp1.1\Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.xml
 E:\GitHub\HelperExpressions\Test\obj\Release\netcoreapp1.1\HelperExpressionsTest.csprojResolveAssemblyReference.cache
 E:\GitHub\HelperExpressions\Test\obj\Release\netcoreapp1.1\HelperExpressionsTest.AssemblyInfo.cs
 E:\GitHub\HelperExpressions\Test\obj\Release\netcoreapp1.1\HelperExpressionsTest.dll
