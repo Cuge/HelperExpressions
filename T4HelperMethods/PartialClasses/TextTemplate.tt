@@ -1,45 +1,38 @@
-﻿<#@ template debug="true" hostspecific="true" language="C#" #>
-<#@ assembly name="System.Core" #>
-<#@ assembly name="EnvDTE" #>  
-<#@ assembly name="EnvDTE80" #>  
-<#@ import namespace="EnvDTE" #>  
-<#@ import namespace="EnvDTE80" #>  
-<#@ import namespace="System.IO" #>  
-<#@ import namespace="System.Linq" #> 
-<#@ import namespace="System.Text" #> 
-<#@ import namespace="System.Collections.Generic" #>
-<#@ import namespace="System.CodeDom.Compiler" #> 
-<#@ include file="$(ProjectDir)\T4FileManager.ttinclude" #>  
-<#@ include file="$(ProjectDir)\EnvHelperMethods.ttinclude" #>  
-<#@ include file="$(ProjectDir)\CodeAutomationHelper.ttinclude" #>  
-
-
-<#@ output extension=".txt" #>  
-
-<# 
+﻿<#@ template debug="true" hostspecific="true" language="C#" #><#@ 
+assembly name="System.Core" #><#@ 
+assembly name="EnvDTE" #><#@ assembly name="EnvDTE80"#><#@ 
+import namespace="EnvDTE" #><#@ 
+import namespace="EnvDTE80" #><#@ 
+import namespace="System.IO" #><#@ 
+import namespace="System.Linq" #><#@ 
+import namespace="System.Text" #><#@ 
+import namespace="System.Collections.Generic" #><#@ 
+import namespace="System.CodeDom.Compiler" #><#@ 
+include file="$(ProjectDir)\EnvHelperMethods.ttinclude" #><#@ 
+include file="$(ProjectDir)\CodeAutomationHelper.ttinclude" #><#@
+include file="$(ProjectDir)\T4FileManager.ttinclude" #><#@ 
+output extension=".txt" #><# 
 // Get the Visual Studio API as a service:
 var host = this.Host; 
 DTE dte = ((IServiceProvider)host).GetService(typeof(DTE)) as DTE;    
-string outputPath = Path.GetDirectoryName(host.ResolvePath("Additional.st"));
-var manager = new T4BlockManager(host, GenerationEnvironment, true) { OutputPath = outputPath}; 
-
-AutomationHelper automationHelper = new AutomationHelper(host) { };
+AutomationHelper automationHelper = new AutomationHelper(host);
 var project = dte.Solution.FindProjectItem(host.TemplateFile).ContainingProject as EnvDTE.Project; 
 //var project = automationHelper.GetProject("HelperExpressionsTest.proj");
 string myFile = File.ReadAllText(host.ResolvePath("Additional.st"));  
 //string outputPath = Path.GetDirectoryName(host.TemplateFile);
-EnvHelperMethods envDteHelper = new EnvHelperMethods(host);
-IList<CodeClass> allClasses = envDteHelper.GetCodeClasses(project.ProjectItems);  
+string outputPath = Path.GetDirectoryName(host.ResolvePath("Additional.st"));
+var manager = new T4BlockManager(host, GenerationEnvironment, true) { OutputPath = outputPath}; 
+var envDteHelper = new EnvHelperMethods(host);
+var allClasses = envDteHelper.GetCodeClasses(project.ProjectItems);  
 #> 
 // Total Project Count <#=  dte.Solution.Projects.Count #> 
-// Total Clases is <#= allClasses.Count #> 
-<# manager.StartHeader(); #>    
+// Total Clases is <#= allClasses.Count #>
+<# manager.StartHeader(); #> 
 //This is generated file, please do not edit by hand 
-//Weihua Li   
+//Weihua Li 
 <# manager.EndHeader(); #>
-<# manager.StartFooter(); #>  
-<# manager.EndFooter(); #> 
-
+<# manager.StartFooter(); #><# manager.EndFooter(); #>
+ 
 <#
 foreach(Project proj in automationHelper.GetAllProjects())
 {
@@ -47,8 +40,8 @@ foreach(Project proj in automationHelper.GetAllProjects())
 <#= proj.Name #>
 <#
 }
-#>
- 
+#>  
+
+
 
 <# manager.Process(true); #>
- 

@@ -1,1 +1,17 @@
-﻿ErrorGeneratingOutput
+﻿ 
+// Total Project Count 3 
+// Total Clases is 1
+ 
+//This is generated file, please do not edit by hand 
+//Weihua Li 
+ 
+src
+HelperExpressions
+Test
+HelperExpressionsTest
+BenchmarkHelpers
+T4HelperMethods
+  
+
+
+

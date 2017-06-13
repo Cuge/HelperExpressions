@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <AssemblyTitle>BDN.Generated</AssemblyTitle>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>BDN.Generated</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <OutputPath>bin\Release</OutputPath>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="BDN.Generated.notcs" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="E:\GitHub\HelperExpressions\BenchmarkHelpers\BenchmarkHelpers.csproj" />
+  </ItemGroup>
+  
+</Project>

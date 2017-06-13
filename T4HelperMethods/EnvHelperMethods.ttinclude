@@ -1,16 +1,15 @@
-﻿<#@ assembly name="System.Core" #>
-<#@ assembly name="EnvDTE80" #>  
-<#@ assembly name="EnvDTE" #>  
-<#@ import namespace="EnvDTE" #>  
-<#@ import namespace="EnvDTE80" #>  
-<#@ import namespace="System.IO" #>  
-<#@ import namespace="System.Linq" #> 
-<#@ import namespace="System.Text" #> 
-<#@ import namespace="System.Collections.Generic" #>
-<#@ import namespace="System.CodeDom.Compiler" #> 
-<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #> 
+﻿<#@ assembly name="System.Core" #><#@ 
+assembly name="EnvDTE80" #><#@ 
+assembly name="EnvDTE" #><#@ 
+import namespace="EnvDTE" #><#@ 
+import namespace="EnvDTE80" #><#@ 
+import namespace="System.IO" #><#@ 
+import namespace="System.Linq" #><#@ 
+import namespace="System.Text" #><#@ 
+import namespace="System.Collections.Generic" #><#@ 
+import namespace="System.CodeDom.Compiler" #><#@ 
+import namespace="Microsoft.VisualStudio.TextTemplating" #><#+
 
-<#+
 public class EnvHelperMethods
 {
     private EnvDTE.DTE _DTE;

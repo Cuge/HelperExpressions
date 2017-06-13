@@ -99,3 +99,4 @@ E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\System.Threading.Tasks.Dat
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Antlr3.Runtime.xml
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Antlr4.StringTemplate.xml
 E:\GitHub\HelperExpressions\T4HelperMethods\bin\Debug\Antlr4.StringTemplate.Visualizer.xml
+E:\GitHub\HelperExpressions\T4HelperMethods\obj\Debug\T4HelperMethods.csprojResolveAssemblyReference.cache
